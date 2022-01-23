@@ -1,4 +1,5 @@
-data
 .vscode
-reorganize_year
-reorganize_month
+*.tif
+*.npy
+*.zip
+__pycache__
