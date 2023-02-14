@@ -54,7 +54,7 @@ def getDataLocationMonth(data_type: str, year: int, month:int =-1):
     :param data_type: 数据类型，可选NDVI, NDVI_year_mean, pr, srad, tmmn, tmmx, lulc, 不区分大小写
     :return: (路径, 文件名)
     '''
-    base_dir = 'data_month_clip'
+    base_dir = 'data_month'
 
     data_type_string_lower = data_type.lower()
 

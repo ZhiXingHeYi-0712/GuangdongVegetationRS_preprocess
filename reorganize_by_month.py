@@ -13,7 +13,7 @@ month_list = [(i, j) for i in range(2001, 2021) for j in range(1, 13)]
 climate_month_list = [(i, j) for i in range(2000, 2021) for j in range(1, 13)]
 
 def getImageMetaData():
-    standard_file = 'data_month_clip/NDVI/2000_3.NDVI.tif'
+    standard_file = 'data_month/NDVI/2000_3.NDVI.tif'
     ds: gdal.Dataset = gdal.Open(standard_file, gdal.GA_ReadOnly)
     data: np.ndarray = ds.ReadAsArray()
     return data.shape

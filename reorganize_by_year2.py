@@ -3,7 +3,6 @@ import os
 from tkinter.messagebox import NO
 import numpy as np
 from osgeo import gdal
-from sympy import EX
 
 base_dir = 'reorganize_year'
 NODATA = -9999
