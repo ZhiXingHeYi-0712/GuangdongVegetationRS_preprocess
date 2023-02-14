@@ -13,6 +13,7 @@ input_dir = 'data_month'
 output_dir = 'data_month_clip'
 
 for var_type in ['LULC', 'NDVI', 'pr', 'srad', 'tmmn', 'tmmx']:
+    os.mkdir(os.path.join(output_dir, var_type))
     file_list = os.listdir(os.path.join(input_dir, var_type))
     for file in file_list:
         clipRasterByRoi(os.path.join(input_dir, var_type, file), os.path.join(output_dir, var_type, file))
