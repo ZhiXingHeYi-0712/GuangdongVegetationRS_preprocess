@@ -50,6 +50,7 @@ for var_type in ['pr', 'srad', 'tmmn', 'tmmx']:
         result_array[:, :, z_index] = data
         z_index += 1
 
+
 # 最后会输出一个npy文件，shape=(1183，1679，1488)，分别是（行数，列数，每个像元上的数据数）
 np.save('reorganize_month/month_data.npy', result_array)
 
